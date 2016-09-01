@@ -1,7 +1,7 @@
 #include <nan.h>
 
 void Crash(const Nan::FunctionCallbackInfo<v8::Value>& info) {
-  info.GetReturnValue().Set(*static_cast<int*>(nullptr));
+  info.GetReturnValue().Set(*static_cast<int*>(0));
 }
 
 void Init(v8::Local<v8::Object> exports) {
