@@ -1,0 +1,13 @@
+{
+  "name": "actual-crash",
+  "version": "1.0.0",
+  "description": "Node.js native addon that just crashes",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "nan": "^2.4.0"
+  }
+}

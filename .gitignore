@@ -1,0 +1,7 @@
+build/
+binding/
+node_modules/
+coverage/
+npm-debug.log
+core
+.nyc_output
