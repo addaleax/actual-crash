@@ -5,8 +5,9 @@ void Crash(const Nan::FunctionCallbackInfo<v8::Value>& info) {
 }
 
 void Init(v8::Local<v8::Object> exports) {
-  exports->Set(Nan::New("crash").ToLocalChecked(),
-               Nan::New<v8::FunctionTemplate>(Crash)->GetFunction());
+  Nan::Set(exports,
+           Nan::New("crash").ToLocalChecked(),
+           Nan::GetFunction(Nan::New<v8::FunctionTemplate>(Crash)).ToLocalChecked());
 }
 
 NODE_MODULE(crash, Init)
