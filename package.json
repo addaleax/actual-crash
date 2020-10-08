@@ -1,6 +1,6 @@
 {
   "name": "actual-crash",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js native addon that just crashes",
   "scripts": {
     "test": "node test/test.js"
